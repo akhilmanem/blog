@@ -52,3 +52,61 @@
 	background-color:white;
 	color:black;
 }
+
+.heading {
+	margin-top: 0px;
+}
+
+table {
+	width:100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
+
+}
+
+table:hover {
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+th {
+	text-align: center;
+	background-color: transparent;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size:40px;
+;
+}
+
+td {
+	background-color:  #cce6ff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.myPara {
+	color:white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.myHead {
+	position: relative;
+	background-color: grey;
+	width:100%;
+}
+
+.myClose {
+	background-color:  #ffb3b3;
+	width: 60px;
+}
+
+.myCloseButton {
+	background-color: transparent;
+	color:white;
+	border:none;
+	padding: 0;
+}

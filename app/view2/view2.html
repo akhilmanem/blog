@@ -1,12 +1,20 @@
-<div class="container" ng-controller="View2Ctrl">
+<div class="container-fluid" ng-controller="View2Ctrl">
 	<!--<h1>Make your {{pageName}} page here.</h1>
 	<ul class="display-menu">
 	    <li><a href="#!/view1">view1</a></li>
 	    <li><a href="#!/view2">view2</a></li>
 	</ul>
 -->
-	<div class="row">
-		<div class="col-md-12">
+	<nav class="myHead">
+			<p class="myPara">
+				Review your blog!
+			</p>
+		
+	</nav>
+
+	<div class="container">
+	<div class="row heading" style="background-color: #cccccc">
+		<div class="col-md-12" style="margin:20px">
 			<form>
 			<input type="textbox" class="form-control" placeholder="add ur title" name="" ng-model="myTitle">
 			<br>
@@ -21,20 +29,21 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<div class="panel-group">
-				<div class="panel panel-default" ng-repeat="x in blogArray">
-					<div class="panel-heading">
-						{{x.title}}
-					</div>
-					<div class="panel-body">
-						{{x.blog}}
-					</div>
-				</div>
-			</div>
+			<table ng-repeat="x in blogArray">
+				<tr>
+					<th>{{x.title}}</th>
+					<th rowspan="2" class="myClose">
+						<button class="myCloseButton" ng-click="removeIt(blogArray.presentCount);">X</button>
+					</th>
+				</tr>
+				<tr>
+					<td>{{x.blog}}</td>
+				</tr>
+			</table>
 		</div>
 	</div>
+	</div>
 	
-
 	
 	<a class="btn btn-primary" ng-click="submit();">Go back to page 1</a>
 

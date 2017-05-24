@@ -13,13 +13,13 @@ angular.module('myApp.view2', ['ngRoute'])
 
 	$scope.pageName = 'BLOG';
 
-	
+	$scope.serialCount=1;
 	$scope.myTitle='';
 	$scope.myBlog='';
 
 	$scope.blogArray = [
-							{title: "your title", blog:"asjdfa afsdkja asfdlkj"},
-							{title: "sfa ", blog: " asdf afs fs"}
+							{title: "your title", blog:"asjdfa afsdkja asfdlkj", presentCount:0},
+							{title: "sfa ", blog: " asdf afs fs", presentCount:1}
 						]
 
 
@@ -28,7 +28,8 @@ angular.module('myApp.view2', ['ngRoute'])
     };
 
     var adding = function() {
-    	$scope.blogArray.push({title: $scope.myTitle, blog: $scope.myBlog});
+    	$scope.serialCount++;
+    	$scope.blogArray.push({title: $scope.myTitle, blog: $scope.myBlog, presentCount:$scope.serialCount});
 
     }
 
@@ -39,5 +40,9 @@ angular.module('myApp.view2', ['ngRoute'])
 	$scope.submit = function () {
 		goToPage1();
 	};
+
+	$scope.removeIt = function(nowCount) {
+		$scope.blogArray.pop();
+	}
 
 }]);
