@@ -1,0 +1,54 @@
+/* app css stylesheet */
+
+.display-menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.display-menu:before {
+  content: "[";
+}
+
+.display-menu:after {
+  content: "]";
+}
+
+.display-menu > li {
+  display: inline;
+}
+
+.display-menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.mytextbox {
+	border:none;
+	border-bottom:1px solid grey;
+	width:70%;
+	outline:none;
+	padding: 5px 5px 5px 5px;
+	margin: 10px;
+	transition: width 0.4s ease-in-out;
+}
+
+.mytextbox:focus{
+	width:100%;
+}
+
+.mybutton2 {
+	background-color:grey;
+	color:white;
+	border:none;
+	font-size:15px;
+	padding:10px 30px;
+	transition-duration: 0.5s;
+	display:inline-block;
+}
+
+.mybutton2:hover {
+	background-color:white;
+	color:black;
+}

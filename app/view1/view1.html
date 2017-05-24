@@ -1,0 +1,16 @@
+<div class="container" ng-controller="View1Ctrl">
+<!--<<h1>Make your {{pageName}} page here.</h1>
+	<ul class="display-menu">
+	    <li><a href="#!/view1">view1</a></li>
+	    <li><a href="#!/view2">view2</a></li>
+	</ul>
+-->
+	<p style="color:red" ng-hide="idiot">Wrong credentials</p>
+	<form>
+		<input type="textfield" class="mytextbox" name="username" placeholder="Email" ng-model="formModel.emailInput">
+		<input type="password" class="mytextbox" name="password" placeholder="Password" ng-model="formModel.passwordInput">	
+	</form>
+	
+
+	<a class="mybutton2" ng-click="submit();">Submit</a>
+</div>
