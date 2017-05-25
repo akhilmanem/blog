@@ -5,12 +5,18 @@
 	    <li><a href="#!/view2">view2</a></li>
 	</ul>
 -->
-	<p style="color:red" ng-hide="idiot">Wrong credentials</p>
+
+	<div class="row">
+
+	<div class="col-md-6" style="float:right;">
+	<p style="color:red" ng-hide="idiot">   Wrong credentials</p>
 	<form>
 		<input type="textfield" class="mytextbox" name="username" placeholder="Email" ng-model="formModel.emailInput">
 		<input type="password" class="mytextbox" name="password" placeholder="Password" ng-model="formModel.passwordInput">	
+		<a class="mybutton2" ng-click="submit();">Submit</a>
 	</form>
-	
+	</div>
+	</div>
 
-	<a class="mybutton2" ng-click="submit();">Submit</a>
+	
 </div>

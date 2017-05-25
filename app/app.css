@@ -70,7 +70,7 @@ table:hover {
 }
 th {
 	text-align: center;
-	background-color: transparent;
+	background-color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-size:40px;
@@ -95,7 +95,7 @@ td {
 
 .myHead {
 	position: relative;
-	background-color: grey;
+	background-color:  #68737e;
 	width:100%;
 }
 
