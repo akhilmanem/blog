@@ -28,7 +28,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		passwordInput: ''
 	};
 
-	$scope.idiot = true;
+	$scope.wrongIp = true;
 
 	var goToPage2 = function() {
        $location.path('/view2'); 
@@ -39,7 +39,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		{
 			goToPage2();
 		} else {
-			$scope.idiot = false;
+			$scope.wrongIp = false;
 			// show error msg
 			// use ng-if and a flag variable to show hide error message
 		}
