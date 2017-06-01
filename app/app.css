@@ -26,16 +26,15 @@
 
 .mytextbox {
 	border:none;
-	border-bottom:1px solid grey;
-	width:70%;
+	border-radius:4px;
+	width:95%;
 	outline:none;
 	padding: 5px 5px 5px 5px;
 	margin: 10px;
-	transition: width 0.4s ease-in-out;
 }
 
-.mytextbox:focus{
-	width:100%;
+.mytextbox:focus {
+	border-bottom: 1px solid lightblue;
 }
 
 .mybutton2 {
@@ -74,7 +73,7 @@ th {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-size:40px;
-;
+
 }
 
 td {
@@ -93,6 +92,8 @@ td {
 	font-size: 20px;
 }
 
+
+
 .myHead {
 	position: relative;
 	background-color:  #68737e;
@@ -109,4 +110,34 @@ td {
 	color:white;
 	border:none;
 	padding: 0;
+}
+
+.myImg {
+	
+}
+
+.myBox {
+	background-color:lightgrey;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
+}
+
+.myBox:hover {
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.myBox2 {
+	background-color:#804000;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
+}
+
+.myLux {
+	font-family: "lucida handwriting";
+	font-size:50px;
+	border-radius: 4px;
+	color: white;
+	margin-top: 40px;
 }
