@@ -26,31 +26,14 @@
 
 .mytextbox {
 	border:none;
-	border-radius:4px;
+	border-radius:10px;
 	width:95%;
 	outline:none;
 	padding: 5px 5px 5px 5px;
 	margin: 10px;
+	font-size: 20px;
 }
 
-.mytextbox:focus {
-	border-bottom: 1px solid lightblue;
-}
-
-.mybutton2 {
-	background-color:grey;
-	color:white;
-	border:none;
-	font-size:15px;
-	padding:10px 30px;
-	transition-duration: 0.5s;
-	display:inline-block;
-}
-
-.mybutton2:hover {
-	background-color:white;
-	color:black;
-}
 
 .heading {
 	margin-top: 0px;
@@ -73,7 +56,6 @@ th {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	font-size:40px;
-
 }
 
 td {
@@ -82,7 +64,9 @@ td {
 	padding-bottom: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-size: 20px;
 }
+
 
 .myPara {
 	color:white;
@@ -96,12 +80,12 @@ td {
 
 .myHead {
 	position: relative;
-	background-color:  #68737e;
+	background-color:  black;
 	width:100%;
 }
 
 .myClose {
-	background-color:  #ffb3b3;
+	background-color: #ffb3b3;
 	width: 60px;
 }
 
@@ -117,21 +101,27 @@ td {
 }
 
 .myBox {
-	background-color:lightgrey;
-	border-radius: 4px;
+	background-color:rgb(77, 38, 0);
+	border-radius: 10px;
 	padding: 10px;
-	box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
 }
 
-.myBox:hover {
-	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.myBoxOut {
+	background-color: #b79f9f;
+	border-radius: 10px;
+	padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
 }
 
 .myBox2 {
 	background-color:#804000;
 	border-radius: 4px;
 	padding: 10px;
-	box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
+	box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2), 1px 7px 21px 1px rgba(0, 0, 0, 0.19);
 }
 
 .myLux {
@@ -140,4 +130,35 @@ td {
 	border-radius: 4px;
 	color: white;
 	margin-top: 40px;
+}
+
+.myLux2 {
+	font-family: "lucida handwriting";
+	font-size:50px;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.mybutton2 {
+	background-color: rgb(77, 38, 0);
+	color:white;
+	border:none;
+	border-radius: 10px;
+	font-size:20px;
+	padding:10px 30px;
+	transition-duration: 0.5s;
+	display:inline-block;
+}
+
+.mybutton2:hover {
+	background-color:white;
+	color:black;
+}
+
+.blogEdit {
+	text-align: center;
+	font-size: 25px;
 }

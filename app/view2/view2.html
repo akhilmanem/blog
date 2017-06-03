@@ -5,56 +5,53 @@
 	    <li><a href="#!/view2">view2</a></li>
 	</ul>
 -->
-	<nav class="myHead">
-			<p class="myPara">
-				Review your blog
-			</p>
-		
-	</nav>
+
+	
 
 	<div class="container">
-	<div class="myBox">
-			<form>
-			<input type="textbox" class="mytextbox" placeholder="Title for Blog" name="" ng-model="myTitle">
-			<br>
-			<textarea class="mytextbox" placeholder="Blog content" name="" ng-model="myBlog"></textarea>
-			<br>
-			<center><button class="mybutton2" ng-click="addThis();">Submit</button></center>
-		</form>
-	</div>
-	<br>
-	<hr>
+		<p class="myLux2">
+			A Blog is a notebook on the web!
+		</p>
 
-	<div class="row"  ng-repeat="x in blogArray">
+		<div class="myBoxOut">
+			<center>
+			<p class="blogEdit">Add a new Blog here!</p>
+			<div class="myBox">
+					<form>
+					<input type="textbox" class="mytextbox" placeholder="Title for Blog" name="" ng-model="myTitle">
+					<br>
+					<textarea class="mytextbox" rows="15" placeholder="Blog content" name="" ng-model="myBlog"></textarea>
+					<br>
+				</form>
+			</div>
+			<br>
+			<button class="mybutton2" ng-click="addThis();">Submit</button>
+			</center>
+		</div>
 
-		<div class="hidden-sm col-md-2">
+		<br>
+		<hr>
+
+		<div class="row"  ng-repeat="x in blogArray">
+			
+				<table>
+					<tr>
+						<th rowspan="2" class="myImg">
+							<img src="">
+						</th>
+						<th style="border-top-left-radius: 10px;">{{x.title}}</th>
+						<th rowspan="2" class="myClose" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+							<button class="myCloseButton" ng-click="removeIt(x.presentCount);">X</button>
+						</th>
+					</tr>
+					<tr>
+						<td style="border-bottom-left-radius: 10px;">
+							{{x.blog}}
+						</td>
+					</tr>
+				</table>
 			
 		</div>
-
-		<div class="col-md-8">
-			<table>
-				<tr>
-					<th rowspan="2" class="myImg">
-						<img src="">
-					</th>
-					<th>{{x.title}}</th>
-					<th rowspan="2" class="myClose">
-						<button class="myCloseButton" ng-click="removeIt(x.presentCount);">X</button>
-					</th>
-				</tr>
-				<tr>
-					<td>
-						{{x.blog}}
-					</td>
-				</tr>
-			</table>
-		</div>
-
-		<div class="hidden-sm col-md-2">
-			
-		</div>
-
-	</div>
 
 
 	</div>
@@ -63,6 +60,6 @@
 	</div>
 	<hr>
 	<center>
-	<button class="mybutton2" ng-click="submit();">Go back to page 1</button>
+	<button class="mybutton2" ng-click="goBack();">Go back to page 1</button>
 	</center>
 </div>
