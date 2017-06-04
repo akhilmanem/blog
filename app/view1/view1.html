@@ -1,45 +1,33 @@
 <div class="container-fluid" ng-controller="View1Ctrl">
-<!--<h1>Make your {{pageName}} page here.</h1>
-	<ul class="display-menu">
-	    <li><a href="#!/view1">view1</a></li>
-	    <li><a href="#!/view2">view2</a></li>
-	</ul>
--->
-
-		<div class="row" style=" margin-top: 150px;">
-
-			<div class="col-md-12">
+	<div class="row" style=" margin-top: 150px;">
+		<div class="col-md-12">
 			<center>
 				<p class="myLux">
 					A Blog is a notebook on the web!
 				</p>
-				</center>
+			</center>
+		</div>
+	</div>
+
+	<div class="row" style="margin-top: 10px">
+		<div class="hidden-sm col-md-4">	
+		</div>
+		<div class="col-md-4 my myBoxOut">
+			<div class="myBox">
+				<p style="color:red" ng-hide="wrongIp">Wrong credentials</p>
+				<form>
+					<input type="textfield" class="mytextbox" name="username" placeholder="Email" ng-model="formModel.emailInput">
+					<br>
+					<input type="password" class="mytextbox" name="password" placeholder="Password" ng-model="formModel.passwordInput">	<br>
+				</form>
 			</div>
+			<br>
+			<center>
+				<a class="mybutton2" ng-click="submit();">Submit</a>
+			</center>
 		</div>
 
-		<div class="row" style="margin-top: 10px">
-		<div class="hidden-sm col-md-4">
-			
-		</div>
-		<div class="col-md-4">
-					<div class="myBox2">
-						<p style="color:red" ng-hide="wrongIp">Wrong credentials</p>
-						<form>
-							<input type="textfield" class="mytextbox" name="username" placeholder="Email" ng-model="formModel.emailInput">
-							<br>
-							<input type="password" class="mytextbox" name="password" placeholder="Password" ng-model="formModel.passwordInput">	<br>
-							<center>
-							<a class="mybutton2" ng-click="submit();">Submit</a>
-							</center>
-						</form>
-					</div>
-			</div>
-
-			<div class="hidden-sm col-md-4">
-			
-		</div>
-			
-		</div>
-		
-	
+		<div class="hidden-sm col-md-4">	
+		</div>	
+	</div>
 </div>
